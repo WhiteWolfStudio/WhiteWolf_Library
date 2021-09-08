@@ -14,10 +14,6 @@ public class YourClass : WW_Library
 
         return [ something ]
 
-&nbsp;
-***
-&nbsp;
-
 * MainPlayerPos [ __Vector2__ ]
 
     ``` csharp
