@@ -271,6 +271,10 @@ namespace WhiteWolf {
 
         /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
+        public void CreateResources() => if ( !Directory.Exists( "Assets/Resources" ) ){ Directory.CreateDirectory( "Assets/Resources" ); }
+
+        /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
         public GameObject[] LoadGOs( string folder ){ return Resources.LoadAll<GameObject>( $"{folder}" ); }
         public GameObject[] LoadGOs( string path, string folder ){ return Resources.LoadAll<GameObject>( $"{path}/{folder}" ); }
 
