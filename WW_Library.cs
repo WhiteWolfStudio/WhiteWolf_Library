@@ -226,7 +226,7 @@ namespace WhiteWolf {
 
         /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-        public void WriteLog( string path, string file, string text ) => WriteNewLine( path, file, $"{System.DateTime.Now.ToString()} | {text} \n" );
+        public void WriteLog( string path, string file, string text ) => WriteNewLine( path, file, $"{System.DateTime.Now.ToString()} | {text}\n" );
 
         /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
