@@ -271,7 +271,7 @@ namespace WhiteWolf {
 
         /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-        public void CreateResources() => if ( !Directory.Exists( "Assets/Resources" ) ){ Directory.CreateDirectory( "Assets/Resources" ); }
+        public void CreateResources(){ if ( !Directory.Exists( "Assets/Resources" ) ){ Directory.CreateDirectory( "Assets/Resources" ); } }
 
         /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
