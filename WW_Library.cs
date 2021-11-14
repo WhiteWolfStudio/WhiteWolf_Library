@@ -203,13 +203,7 @@ namespace WhiteWolf {
 
         }
 
-        public static void WriteJson( string path, string file, string text ){
-
-            StreamWriter w = new StreamWriter( $"{path}/{file}.json", true );
-            w.Write( text );
-            w.Close();
-
-        }
+        public static void WriteJson( string path, string file, string text ) => File.WriteAllText( $"{path}/{file}.json", text );
 
         /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
