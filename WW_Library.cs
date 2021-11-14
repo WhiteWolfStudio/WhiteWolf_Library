@@ -207,11 +207,11 @@ namespace WhiteWolf {
 
         /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-        public static string ScriptsName(){ return GetComponent<MonoBehaviour>().GetType().Name; }
+        public static string ScriptsName( GameObject obj ){ return obj.GetComponent<MonoBehaviour>().GetType().Name; }
 
         /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
-        public static void WriteScriptName( string path, string file, string text ){ WriteNewLine( path, file, $"{System.DateTime.Now.ToString()} | {text + GetComponent<MonoBehaviour>().GetType().Name}\n" ); }
+        public static void WriteScriptName( string path, string file, string text, GameObject obj ){ WriteNewLine( path, file, $"{System.DateTime.Now.ToString()} | {text + obj.GetComponent<MonoBehaviour>().GetType().Name}\n" ); }
 
         public static void WriteScriptsName( GameObject go, string path, string file, string text ){
 
