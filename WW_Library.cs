@@ -195,6 +195,24 @@ namespace WhiteWolf {
 
         /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 
+        public static void WriteNewFile( string path, string file, string text ){
+
+            StreamWriter w = new StreamWriter( $"{path}/{file}", true );
+            w.Write( text );
+            w.Close();
+
+        }
+
+        public static void WriteJson( string path, string file, string text ){
+
+            StreamWriter w = new StreamWriter( $"{path}/{file}.json", true );
+            w.Write( text );
+            w.Close();
+
+        }
+
+        /*––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––*/
+
         public static void NewData( string path, string file ){
 
             StreamReader sr = new StreamReader( path + file );
